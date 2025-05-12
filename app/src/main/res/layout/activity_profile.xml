@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile"
+    tools:context=".ProfileActivity"
 
     android:layout_gravity="start"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
 
+
+    <!-- Profile UI -->
     <TextView
-        android:id="@+id/titletext"
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
@@ -23,26 +21,80 @@
 
         android:background=""/>
 
-    <EditText
-        android:id="@+id/searchInput"
+    <ImageView
+        android:id="@+id/profileImage"
+
+        android:layout_width="250px"
+        android:layout_height="250px"
+
+        />
+
+    <TextView
+        android:id="@+id/profileNameTxt"
+        android:text="Username"
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Search"
+
+        android:textSize="20dp"
+        android:textStyle="bold"
         />
-    
-    <GridView
-        android:id="@+id/productList"
+
+    <Button
+        android:id="@+id/LogoutBtn"
+        style="@style/Button"
 
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
 
-        android:gravity="center_horizontal"
-        android:numColumns="3"
-        android:horizontalSpacing="3dp"
-        android:verticalSpacing="3dp"
-        tools:listitem="@layout/card_item"
+        android:text="Logout"
+        android:gravity="center"
+
+        />
+
+    <!-- login UI -->
+    <TextView
+        android:id="@+id/LoginTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Login"
+        android:gravity="center"
+        android:textSize="30dp"
+        />
+
+    <EditText
+        android:id="@+id/usernameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Username"
+        />
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Password"
+        />
+
+    <Button
+        android:id="@+id/loginBtn"
+        style="@style/Button"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Login" />
+
+
+    <!-- take up the rest of the space-->
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_weight="1"
         />
 
     <!-- Navbar -->
@@ -106,5 +158,7 @@
             />
         <!-- End of navbar -->
     </LinearLayout>
+
+
 
 </LinearLayout>

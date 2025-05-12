@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="wandermartPrimary">#e84e37</color>
+    <color name="wandermartSecondary">#fef7e9</color>
+    <color name="wandermartAccent">#FFEA8B</color>
 </resources>

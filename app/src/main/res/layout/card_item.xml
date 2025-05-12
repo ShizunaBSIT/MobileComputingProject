@@ -8,6 +8,8 @@
     app:cardUseCompatPadding="true"
     app:cardCornerRadius="10dp"
     app:cardElevation="5dp"
+
+    style="@style/cardView"
     >
 
     <LinearLayout
@@ -23,7 +25,8 @@
             android:layout_weight="1"
 
             android:layout_gravity="center_horizontal"
-            android:src="@mipmap/ic_launcher_round"
+            android:src="@mipmap/ic_channel"
+
             />
 
         <TextView
