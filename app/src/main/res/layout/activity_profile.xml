@@ -15,11 +15,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:background=""
         android:text="Wandermart"
         android:textSize="30dp"
 
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        />
 
     <ImageView
         android:id="@+id/profileImage"
@@ -62,11 +62,11 @@
         android:textSize="30dp" />
 
     <EditText
-        android:id="@+id/usernameInput"
+        android:id="@+id/emailInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        android:hint="Username" />
+        android:hint="Email" />
 
     <EditText
         android:id="@+id/passwordInput"
@@ -84,6 +84,14 @@
 
         android:text="Login" />
 
+    <Button
+        android:id="@+id/signupBtn"
+        style="@style/Button"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Sign Up" />
 
     <!-- take up the rest of the space-->
     <Space

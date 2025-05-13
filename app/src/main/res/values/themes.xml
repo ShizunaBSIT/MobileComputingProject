@@ -2,6 +2,10 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.MobileComputingProject" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
+        <item name="android:colorPrimary">@color/wandermartPrimary</item>
+        <item name="android:colorSecondary">@color/wandermartSecondary</item>
+        <item name="android:colorAccent">@color/wandermartAccent</item>
+
         <item name="android:background">@color/wandermartSecondary</item>
     </style>
 
@@ -11,7 +15,8 @@
     </style>
 
     <style name="Button" parent="Base.Theme.MobileComputingProject">
-        <item name="android:backgroundTint">@color/wandermartPrimary</item>
+        <item name="android:background">@color/wandermartPrimary</item>
+        <item name="android:colorAccent">@color/wandermartPrimary</item>
         <item name="android:radius">30dp</item>
     </style>
 
