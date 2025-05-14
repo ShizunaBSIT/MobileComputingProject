@@ -74,6 +74,16 @@ public class OrderActivity extends AppCompatActivity {
             }
         });
 
+        //placed order
+        placeOrderBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(OrderActivity.this, "Order Placed", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(OrderActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     @Override

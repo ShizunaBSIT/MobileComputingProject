@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         productList.add(new Product(R.mipmap.apple_product, "Stolen Apple Phone", "Rating: 2"));
 
         //add to the gridview
-        ProductAdapter productAdapter = new ProductAdapter(this, R.layout.product_item, productList);
+        ProductAdapter productAdapter = new ProductAdapter(this, R.layout.card_item, productList);
         GridView gridView = findViewById(R.id.productList);
         gridView.setAdapter(productAdapter);
     }
