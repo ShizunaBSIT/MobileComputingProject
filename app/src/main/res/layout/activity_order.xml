@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".OrderActivity"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Order"
+        android:textSize="50dp"
+        />
+
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Product Name"
+        android:textSize="30dp"
+        />
+
+    <EditText
+        android:id="@+id/recipientInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Recipient Name"/>
+
+    <EditText
+        android:id="@+id/addressInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Address"/>
+
+    <Button
+        android:id="@+id/addressAutoBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Autofill Address"/>
+
+    <Button
+        android:id="@+id/placeOrderBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Place Order"
+        />
+
+</LinearLayout>

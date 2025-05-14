@@ -3,6 +3,7 @@ package com.example.mobilecomputingproject;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.GridView;
 import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
@@ -12,6 +13,9 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.google.firebase.auth.FirebaseAuth;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -50,6 +54,20 @@ public class MainActivity extends AppCompatActivity {
         });
         // end of navigation bar
 
+
+        // add dummy data for gridView (fake products)
+        List<Product> productList = new ArrayList<>();
+
+        productList.add(new Product(R.mipmap.apple_product, "Apple Phone", "Rating: 5"));
+        productList.add(new Product(R.mipmap.apple_product, "Apple", "Rating: 3"));
+        productList.add(new Product(R.mipmap.apple_product, "Fresh Apple", "Rating: 4"));
+        productList.add(new Product(R.mipmap.apple_product, "Wormy Apple", "Rating: 1"));
+        productList.add(new Product(R.mipmap.apple_product, "Stolen Apple Phone", "Rating: 2"));
+
+        //add to the gridview
+        ProductAdapter productAdapter = new ProductAdapter(this, R.layout.product_item, productList);
+        GridView gridView = findViewById(R.id.productList);
+        gridView.setAdapter(productAdapter);
     }
 
 }
