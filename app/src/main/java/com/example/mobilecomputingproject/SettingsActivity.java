@@ -70,6 +70,16 @@ public class SettingsActivity extends AppCompatActivity {
             }
         });
 
+        Button chatbotBtn = findViewById(R.id.chatbotBtn);
+
+        chatbotBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SettingsActivity.this, ChatActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         // navigation bar
         ImageButton home = findViewById(R.id.homeBtn);

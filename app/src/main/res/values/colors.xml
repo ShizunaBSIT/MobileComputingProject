@@ -7,4 +7,8 @@
     <color name="wandermartPrimary">#e84e37</color>
     <color name="wandermartSecondary">#fef7e9</color>
     <color name="wandermartAccent">#FFEA8B</color>
+
+    <color name="blue">#0026FF</color>
+    <color name="light_gray">#A2A2A2</color>
+    <color name="dark_gray">#2F2F2F</color>
 </resources>

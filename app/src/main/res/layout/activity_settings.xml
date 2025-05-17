@@ -51,6 +51,17 @@
 
         android:text="Apply" />
 
+    <Button
+        android:id="@+id/chatbotBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Chatbot"
+        />
+
+
+
+
     <!-- take up the rest of the space-->
     <Space
         android:layout_width="wrap_content"
